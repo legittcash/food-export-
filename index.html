@@ -609,12 +609,15 @@
     align-items: center;
     justify-content: center;
     gap: 8px;
-    font-size: 12px;
-    color: rgba(255,255,255,0.35);
+    font-size: 15px;
+    font-weight: 500;
+    color: rgba(255,255,255,0.65);
     margin-top: 16px;
   }
 
-  .secure-note::before { content: '🔒'; }
+  .secure-note::before { content: '🔒'; font-size: 18px; }
+
+  .secure-note.no-icon::before { content: none; }
 
   /* FOOTER */
   footer {
@@ -1350,7 +1353,7 @@
         <div class="price-new">₦7,500</div>
         <div class="price-label">Special Launch Price, Limited Time</div>
         <p class="secure-note" style="margin-top:10px;">Secure checkout via Selar</p>
-        <p class="secure-note">Always choose bank transfer method</p>
+        <p class="secure-note no-icon" style="white-space:nowrap;">Always choose bank transfer method</p>
       </div>
       <a href="https://selar.com/onyitexfoods" target="_blank" class="btn-primary">
         🛒 Get Instant Access Now
