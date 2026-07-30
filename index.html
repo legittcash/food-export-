@@ -933,6 +933,11 @@
     .feature-number { font-size: 28px; }
     nav .btn-primary { display: none; }
   }
+
+  /* FAQ ACCORDION */
+  .faq-item.open .faq-answer { max-height: 300px !important; }
+  .faq-item.open .faq-icon { transform: rotate(45deg); }
+  .faq-icon { transition: transform 0.25s ease; }
 </style>
 </head>
 <body>
@@ -1070,12 +1075,6 @@
 
     </div>
   </div>
-
-  <style>
-    .faq-item.open .faq-answer { max-height: 300px; }
-    .faq-item.open .faq-icon { transform: rotate(45deg); }
-    .faq-icon { transition: transform 0.25s ease; }
-  </style>
 
   <div class="learn-glow-wrap">
     <p class="section-label" style="color:#25d366; margin-top:40px; align-self:center; text-align:center; width:100%; position:relative; z-index:1;">What You Will Learn</p>
